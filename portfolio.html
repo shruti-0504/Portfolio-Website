@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), linear-gradient(135deg, #1a1a1a, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        #about img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .about-text {
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInMove 1s ease-out forwards;
+        }
+
+        @keyframes fadeInMove {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px -4px 10px rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="fade-in">
+        <img src="Formal Pic.jpg" alt="My Picture">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi! I'm a creative and analytical developer passionate about building impactful solutions. I love working with technology, solving complex problems, and turning data into meaningful insights. From developing sleek UI designs to working on data-driven machine learning projects, I thrive on innovation and continuous learning. Let's create something amazing together!</p>
+        </div>
+    </section>
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Calculator Maven</h3>
+            <p>A Java-based calculator project built using Maven and deployed with Docker.</p>
+            <a href="https://github.com/shruti-0504/Calculator_Maven" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Sorting UI (HTML, CSS, JS)</h3>
+            <p>A visual representation of sorting algorithms using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/shruti-0504/Sorting-UI-HTML-CSS-JS-" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Flight Fare Prediction</h3>
+            <p>A machine learning project that predicts flight ticket prices based on various factors.</p>
+            <a href="https://github.com/shruti-0504/Flight-Fare-Prediction" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Road Accident Dashboard</h3>
+            <p>An interactive dashboard analyzing road accident data using Excel.</p>
+            <a href="https://github.com/shruti-0504/Road-Accident-Dashboard" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Diwali Sales Data Analysis</h3>
+            <p>Analyzing sales data during Diwali using Python for business insights.</p>
+            <a href="https://github.com/shruti-0504/Diwali-Sales-Data-Analysis-project" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Netflix EDA</h3>
+            <p>Exploratory Data Analysis of Netflix content, trends, and insights using Python.</p>
+            <a href="https://github.com/shruti-0504/Netflix-EDA" target="_blank">View Project</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>Contact me at: <a href="mailto:guptashruti7710@gmail.com">guptashruti7710@gmail.com</a></p>
+    </footer>
+</body>
+</html>
