@@ -45,9 +45,6 @@
         }
 
         #about {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 50px;
             background: rgba(255, 0, 0, 0.1);
             border-radius: 10px;
@@ -56,7 +53,21 @@
             max-width: 900px;
         }
 
-        #about img {
+        .slider {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide img {
             width: 200px;
             height: 200px;
             object-fit: cover;
@@ -65,51 +76,114 @@
             box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
         }
 
-        .about-text {
-            text-align: left;
+        .slide .about-text {
             max-width: 600px;
         }
 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInMove 1s ease-out forwards;
-        }
-
-        @keyframes fadeInMove {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        footer {
+        .slider-controls {
             text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px -4px 10px rgba(255, 0, 0, 0.5);
+            margin-top: 10px;
         }
+
+        .slider-controls button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        #projects a {
+         color: red;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+       #projects a:hover {
+        text-decoration: underline;
+        color:#7a1717; /* a lighter red on hover */
+}
+
+       
     </style>
+    
 </head>
 <body>
     <header>
         <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/shruti-0504" target="_blank">GitHub</a></li>
+                <li><a href="https://leetcode.com/u/shrutigupta7710/" target="_blank">LeetCode</a></li>
+                <li><a href="https://www.linkedin.com/in/shruti-gupta2004/" target="_blank">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about" class="fade-in">
-        <img src="Formal Pic.jpg" alt="My Picture">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hi! I'm a creative and analytical developer passionate about building impactful solutions. I love working with technology, solving complex problems, and turning data into meaningful insights. From developing sleek UI designs to working on data-driven machine learning projects, I thrive on innovation and continuous learning. Let's create something amazing together!</p>
+    <section id="about">
+        <div class="slider">
+            <div class="slide">
+                <img src="Formal Pic.jpg" alt="My Picture">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm a creative and analytical developer passionate about building impactful solutions. I love working with technology, solving complex problems, and turning data into meaningful insights. From developing sleek UI designs to working on data-driven machine learning projects, I thrive on innovation and continuous learning. Let's create something amazing together!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://s3.ap-south-1.amazonaws.com/production-mentormind/blogs/cover_images/000/000/008/original/GEN-Palmer-Skills-Atrophy-1290x860-1.jpg?1638801295" alt="Skills">
+                <div class="about-text">
+                    <h2>Skills</h2>
+                    <p><strong>Languages:</strong> Python, C, C++, SQL, HTML, CSS, JavaScript, Java</p>
+                    <p><strong>Tools, Libraries & Frameworks:</strong> Maven, Swing, JUnit Testing</p>
+                    <p><strong>Soft Skills:</strong> Team work, Leadership, Holistic Thinking, Event Management</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV0ZmxpeHxlbnwwfHwwfHx8MA%3D%3D" alt="Netflix EDA">
+                <div class="about-text">
+                    <h2>Netflix EDA</h2>
+                    <p>Objective: Analyzing 8,000+ Netflix titles, to uncover insights about content distribution, popular genres, top directors, and trends across 100 + countries, helping inform strategic decisions regarding content acquisition and production.</p>
+                    <p>   Tech: Python, Data Visualization (Matplotlib, Seaborn), Data Wrangling (Pandas, NumPy), Statistical Analysis</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://www.21kschool.com/in/wp-content/uploads/sites/4/2023/11/15-Facts-About-Coding-Every-Kid-Should-Know.png" alt="Sorting UI">
+                <div class="about-text">
+                    <h2>Sorting Visualizer</h2>
+                    <p>Objective: To create an interactive web-based tool that visually demonstrates various sorting algorithms. The goal is to help users understand how sorting techniques work through step-by-step animations and improve their comprehension of algorithm efficiency.</p>
+                       
+                       <p> Tech: HTML, CSS, JavaScript, Sorting Algorithms, Data Visualization, UI/UX Design.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.template.net/143040/dashboard-template-l97e3.png" alt="Road Accident Dashboard">
+                <div class="about-text">
+                    <h2>Road Accident Dashboard</h2>
+                    <p>Objective: To design an interactive, excel dashboard for visualizing and analyzing road accident data covering 150,000+ accident records across different severities, conditions and locations, which will enable the stakeholders to make data-driven decisions to improve road safety.
+                    </p>
+                    <p>Tech: Excel (Pivot Tables, Power Query), Data Visualization (Charts, Conditional Formatting), Data Filtering, Dashboard Design</p>
+                </div>
+            </div>
+            <div class="slide">
+    <img src="https://cdn-icons-png.flaticon.com/512/3771/3771441.png" alt="Skills">
+    <div class="about-text">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Python, C, C++, SQL, HTML, CSS, JavaScript, Java</p>
+        <p><strong>Tools, Libraries & Frameworks:</strong> Maven, Swing, JUnit Testing</p>
+        <p><strong>Soft Skills:</strong> Team work, Leadership, Holistic Thinking, Event Management</p>
+    </div>
+</div>
+        </div>
+        <div class="slider-controls">
+            <button id="prevBtn">Prev</button>
+            <button id="nextBtn">Next</button>
         </div>
     </section>
     <section id="projects" class="fade-in">
@@ -150,4 +224,5 @@
         <p>Contact me at: <a href="mailto:guptashruti7710@gmail.com">guptashruti7710@gmail.com</a></p>
     </footer>
 </body>
+
 </html>
