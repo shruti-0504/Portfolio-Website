@@ -42,9 +42,11 @@
   }
   
   a {
-    color: var(--primary);
+    color: #333333;
+    font-weight: 500;
     text-decoration: none;
     transition: color var(--transition);
+  
   }
   
   a:hover {
@@ -822,4 +824,5 @@
 }
 
 
+  
   
