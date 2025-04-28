@@ -91,6 +91,3 @@ This project showcases who I am — my skills, my work, and my passion for build
 - Special gratitude to everyone who encouraged me to build and improve my portfolio.
 
 > *"Building beautiful things with passion, code, and creativity!"* 🚀
-```
-
----
