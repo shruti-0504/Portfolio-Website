@@ -1,4 +1,4 @@
-click on this to view portfolio: https://shruti-0504.github.io/Portfolio-Website/
+
 🌟 Personal Portfolio Website
 Welcome to my personal portfolio!
 This project showcases who I am — my skills, my work, and my passion for building impactful digital experiences.
@@ -14,7 +14,6 @@ Project Showcase: Interactive project section with direct GitHub links.
 
 External Links: Quick access to my GitHub, LinkedIn, and LeetCode profiles.
 
-Elegant Theme: Dark background with vibrant red highlights for an energetic, bold look.
 
 📸 Sneak Peek
 
@@ -42,13 +41,13 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/your-portfolio-repo.git
+git clone https://github.com/your-username/Portfolio-Website.git
 Navigate to the project folder:
 
 bash
 Copy
 Edit
-cd your-portfolio-repo
+cd Portfolio-Website
 Open the index.html file in your browser:
 
 You can simply double-click the index.html file.
@@ -56,7 +55,7 @@ You can simply double-click the index.html file.
 Or use VS Code Live Server extension for a better experience.
 
 ✨ Live Demo
-🔗 Click Here to See it Live (Update this with your deployed link when ready!)
+🔗 https://shruti-0504.github.io/Portfolio-Website/
 
 📚 Projects Included
 Calculator Maven – Java Maven project deployed with Docker.
